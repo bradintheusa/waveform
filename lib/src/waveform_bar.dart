@@ -1,3 +1,4 @@
+import 'dart:developer' as dev;
 import 'package:flutter/material.dart';
 
 import 'amplitude.dart';
@@ -31,9 +32,10 @@ class WaveFormBar extends StatelessWidget {
   /// The height of the bar is calculated based on the amplitude value,
   /// constrained to a range between 1 and 160, and multiplied by [maxHeight].
   Widget _buildWaveFormBar() {
+    // dev.log("amp: ${amplitude.current.abs()} ");
     return Container(
       width: 4,
-      height:  amplitude.current.abs().clamp(1, 160).toDouble() * maxHeight,
+      height: amplitude.current.abs().clamp(1, 160).toDouble() * maxHeight,
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(10),
