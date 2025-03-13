@@ -58,7 +58,7 @@ class _AnimatedWaveListState extends State<AnimatedWaveList> {
       _barBuilder(animation, amplitude);
 
   // Inserts the next amplitude value into the list model.
-  void _insert(Amplitude amplitude) => _list.insert(0, amplitude);
+  void _insert(Amplitude amplitude) { _list.insert(0, amplitude);}
 
   @override
   void initState() {

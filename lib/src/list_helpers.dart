@@ -1,4 +1,4 @@
-/// Extension on List<num> to provide additional helper methods.
+/// Extension on List(num) to provide additional helper methods.
 extension ListHelpers on List<num> {
   /// Finds the maximum value in the list.
   ///
